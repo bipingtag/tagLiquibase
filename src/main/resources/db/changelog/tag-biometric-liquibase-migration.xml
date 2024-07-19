@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+         http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+    <!--<changeSet id="1" author="tag-biometric">
+        <sqlFile path="db/changelog/data.sql" />
+    </changeSet>-->
+    <changeSet id="20230907141111" author="tag-biometric-all-entities" runAlways="true">
+        <sqlFile path="db/changelog/liquibase_migration_all_entities.sql" />
+    </changeSet>
+    <changeSet id="130" author="tag-biometric-webhook" runAlways="true">
+        <sqlFile path="db/changelog/entity.sql" />
+    </changeSet>
+    <changeSet id="112" author="tag-biometric">
+        <sqlFile path="db/changelog/script_25_07_23.sql" />
+    </changeSet>
+    <changeSet id="113" author="tag-biometric">
+        <sqlFile path="db/changelog/script_27_07_23.sql" />
+    </changeSet>
+    <changeSet id="202308210124001" author="tag-biometric">
+        <sqlFile path="db/changelog/add_unique_constraints_program.sql" />
+    </changeSet>
+    <changeSet id="20230810194500" author="tag-biometric">
+        <sqlFile path="db/changelog/remove_fss_fields.sql" />
+    </changeSet>
+    <changeSet id="20231012124500" author="tag-biometric">
+        <sqlFile path="db/changelog/script_12_10_23.sql" />
+    </changeSet>
+    <changeSet id="20240103124500" author="tag-biometric">
+        <sqlFile path="db/changelog/script_03_01_24.sql" />
+    </changeSet>
+    <changeSet id="20240109124500" author="tag-biometric">
+        <sqlFile path="db/changelog/script_09_01_24.sql" />
+    </changeSet>
+    <changeSet id="20240118124500" author="tag-biometric">
+        <sqlFile path="db/changelog/script_18_01_24.sql" />
+    </changeSet>
+    <changeSet id="20240318124500" author="tag-biometric">
+        <sqlFile path="db/changelog/script_18_03_24.sql" />
+    </changeSet>
+</databaseChangeLog>

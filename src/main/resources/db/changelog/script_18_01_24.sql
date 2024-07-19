@@ -1,0 +1,1 @@
+ALTER TABLE card_holder DROP COLUMN IF EXISTS parent_card_id;

@@ -1,0 +1,2 @@
+ALTER TABLE processor DROP COLUMN IF EXISTS bin;
+ALTER TABLE processor_aud DROP COLUMN IF EXISTS bin;
