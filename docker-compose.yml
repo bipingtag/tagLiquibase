@@ -1,0 +1,18 @@
+version: '3'
+
+
+services:
+  tag-biometric-config-server:
+    container_name: tag-biometric-database
+    restart: always
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    image: tag-biometric-database
+    environment:
+      - JAVA_OPTS=-Xmx400m
+      - PROFILE=${PROFILE}
+      - SHOW_LOGS=${SHOW_LOGS}
+      - LOGSTASH_URL=${LOGSTASH_URL}
+    env_file:
+      - .env
