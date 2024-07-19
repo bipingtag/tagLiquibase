@@ -2,8 +2,9 @@ spring:
   application:
     name: database
   datasource:
-    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/tagbiometricliquibasetest}
-    username: ${DB_USERNAME:test}
-    password: ${DB_PASSWORD:test}
+    url: ${DATABASE_URL:jdbc:postgresql://localhost:5432/tagbiometrictest}
+    username: ${DB_USERNAME:tagdev}
+    password: ${DB_PASSWORD:tagdev}
   liquibase:
     change-log: classpath:db/changelog/liquibase-changelog.yml
+    enabled: ${LIQUIBASE_ENABLED:false}
